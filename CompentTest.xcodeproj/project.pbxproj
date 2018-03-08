@@ -10,12 +10,15 @@
 		2E02E984204E90B600EAEC0D /* CycleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02E983204E90B600EAEC0D /* CycleLabel.m */; };
 		2E02E989204EA17900EAEC0D /* QDisGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02E988204EA17900EAEC0D /* QDisGroup.m */; };
 		2E369D5C204F8D4C00813D3A /* QDisQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E369D5B204F8D4C00813D3A /* QDisQueue.m */; };
+		2E369D5F204FF2CD00813D3A /* GCDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E369D5E204FF2CD00813D3A /* GCDTestViewController.m */; };
 		2E3848A020492A4200B4063F /* TestCoreFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E38489F20492A4200B4063F /* TestCoreFoundation.m */; };
 		2E3B01F3201EC84D00EE1EA8 /* QShowWaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B01F2201EC84D00EE1EA8 /* QShowWaterViewController.m */; };
 		2E3B01F6201EC86700EE1EA8 /* QWaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B01F5201EC86600EE1EA8 /* QWaterView.m */; };
 		2E420B7D2046518B00A6684E /* LoadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E420B7C2046518B00A6684E /* LoadTest.m */; };
 		2E420B83204651BC00A6684E /* LoadTest+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E420B82204651BC00A6684E /* LoadTest+Add.m */; };
 		2E44C6341FFE007B005F9037 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E44C6331FFE007B005F9037 /* TestViewController.m */; };
+		2E45FB652050DA2400C9C7FC /* AnimationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E45FB642050DA2400C9C7FC /* AnimationTestViewController.m */; };
+		2E45FB692050DA6C00C9C7FC /* SnapshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E45FB682050DA6C00C9C7FC /* SnapshotViewController.m */; };
 		2E61075B1FA0310300B2B6D9 /* QPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E61075A1FA0310300B2B6D9 /* QPopMenuView.m */; };
 		2E6107691FA0768100B2B6D9 /* YBPopupMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6107671FA0768100B2B6D9 /* YBPopupMenu.m */; };
 		2E6ED86F204D36CB009C398D /* StudentAddEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6ED86E204D36CB009C398D /* StudentAddEditViewController.m */; };
@@ -46,6 +49,8 @@
 		2E02E988204EA17900EAEC0D /* QDisGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDisGroup.m; sourceTree = "<group>"; };
 		2E369D5A204F8D4C00813D3A /* QDisQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDisQueue.h; sourceTree = "<group>"; };
 		2E369D5B204F8D4C00813D3A /* QDisQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDisQueue.m; sourceTree = "<group>"; };
+		2E369D5D204FF2CD00813D3A /* GCDTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTestViewController.h; sourceTree = "<group>"; };
+		2E369D5E204FF2CD00813D3A /* GCDTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTestViewController.m; sourceTree = "<group>"; };
 		2E38489E20492A4200B4063F /* TestCoreFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCoreFoundation.h; sourceTree = "<group>"; };
 		2E38489F20492A4200B4063F /* TestCoreFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCoreFoundation.m; sourceTree = "<group>"; };
 		2E3B01F1201EC84D00EE1EA8 /* QShowWaterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QShowWaterViewController.h; sourceTree = "<group>"; };
@@ -58,6 +63,10 @@
 		2E420B82204651BC00A6684E /* LoadTest+Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LoadTest+Add.m"; sourceTree = "<group>"; };
 		2E44C6321FFE007B005F9037 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		2E44C6331FFE007B005F9037 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		2E45FB632050DA2400C9C7FC /* AnimationTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationTestViewController.h; sourceTree = "<group>"; };
+		2E45FB642050DA2400C9C7FC /* AnimationTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTestViewController.m; sourceTree = "<group>"; };
+		2E45FB672050DA6C00C9C7FC /* SnapshotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnapshotViewController.h; sourceTree = "<group>"; };
+		2E45FB682050DA6C00C9C7FC /* SnapshotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnapshotViewController.m; sourceTree = "<group>"; };
 		2E6107591FA0310300B2B6D9 /* QPopMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPopMenuView.h; sourceTree = "<group>"; };
 		2E61075A1FA0310300B2B6D9 /* QPopMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPopMenuView.m; sourceTree = "<group>"; };
 		2E61075D1FA046CD00B2B6D9 /* 5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5@2x.png"; sourceTree = "<group>"; };
@@ -138,6 +147,8 @@
 				2E02E988204EA17900EAEC0D /* QDisGroup.m */,
 				2E369D5A204F8D4C00813D3A /* QDisQueue.h */,
 				2E369D5B204F8D4C00813D3A /* QDisQueue.m */,
+				2E369D5D204FF2CD00813D3A /* GCDTestViewController.h */,
+				2E369D5E204FF2CD00813D3A /* GCDTestViewController.m */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -162,6 +173,25 @@
 				2E38489F20492A4200B4063F /* TestCoreFoundation.m */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		2E45FB622050D9EB00C9C7FC /* 动画 */ = {
+			isa = PBXGroup;
+			children = (
+				2E45FB662050DA5900C9C7FC /* 截屏动画 */,
+				2E45FB632050DA2400C9C7FC /* AnimationTestViewController.h */,
+				2E45FB642050DA2400C9C7FC /* AnimationTestViewController.m */,
+			);
+			path = "动画";
+			sourceTree = "<group>";
+		};
+		2E45FB662050DA5900C9C7FC /* 截屏动画 */ = {
+			isa = PBXGroup;
+			children = (
+				2E45FB672050DA6C00C9C7FC /* SnapshotViewController.h */,
+				2E45FB682050DA6C00C9C7FC /* SnapshotViewController.m */,
+			);
+			path = "截屏动画";
 			sourceTree = "<group>";
 		};
 		2E6107581FA0308A00B2B6D9 /* popMenu */ = {
@@ -222,6 +252,7 @@
 		2E720CFF1F99F18B00BA6276 /* CompentTest */ = {
 			isa = PBXGroup;
 			children = (
+				2E45FB622050D9EB00C9C7FC /* 动画 */,
 				2E02E985204EA00600EAEC0D /* GCD */,
 				2E74FBB7204D2E0900D3849E /* FMDB */,
 				2ED4EED12045388F0061EA87 /* 轮播 */,
@@ -438,6 +469,7 @@
 				2E369D5C204F8D4C00813D3A /* QDisQueue.m in Sources */,
 				2E6ED875204D39F6009C398D /* MYDBManager.m in Sources */,
 				2E02E989204EA17900EAEC0D /* QDisGroup.m in Sources */,
+				2E45FB692050DA6C00C9C7FC /* SnapshotViewController.m in Sources */,
 				2E02E984204E90B600EAEC0D /* CycleLabel.m in Sources */,
 				2E9A8433202EE76A008D743C /* NFCHelper.m in Sources */,
 				2ED4EED4204538AC0061EA87 /* CycleViewViewController.m in Sources */,
@@ -445,6 +477,7 @@
 				2E61075B1FA0310300B2B6D9 /* QPopMenuView.m in Sources */,
 				2E74FBBA204D2E2900D3849E /* FMDBViewController.m in Sources */,
 				2E420B7D2046518B00A6684E /* LoadTest.m in Sources */,
+				2E369D5F204FF2CD00813D3A /* GCDTestViewController.m in Sources */,
 				2E720D101F99F18B00BA6276 /* main.m in Sources */,
 				2ED4EED720453A820061EA87 /* CycleCollectionViewCell.m in Sources */,
 				2E6ED872204D374C009C398D /* Student.m in Sources */,
@@ -455,6 +488,7 @@
 				2E44C6341FFE007B005F9037 /* TestViewController.m in Sources */,
 				2E720D021F99F18B00BA6276 /* AppDelegate.m in Sources */,
 				2E3848A020492A4200B4063F /* TestCoreFoundation.m in Sources */,
+				2E45FB652050DA2400C9C7FC /* AnimationTestViewController.m in Sources */,
 				2E3B01F6201EC86700EE1EA8 /* QWaterView.m in Sources */,
 				2E3B01F3201EC84D00EE1EA8 /* QShowWaterViewController.m in Sources */,
 			);

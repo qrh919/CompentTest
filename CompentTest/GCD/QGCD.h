@@ -10,5 +10,6 @@
 #define QGCD_h
 
 #import "QDisGroup.h"
+#import "QDisQueue.h"
 
 #endif /* QGCD_h */

@@ -17,6 +17,8 @@
 #import "ChangeCellHeightController.h"
 #import "CycleViewViewController.h"
 #import "FMDBViewController.h"
+#import "GCDTestViewController.h"
+#import "AnimationTestViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -38,7 +40,7 @@
     }
     
     //
-    self.dataArr = @[@"searchBar",@"pnChart",@"test",@"水波纹",@"NFC",@"UIKit",@"轮播",@"FMDB"];
+    self.dataArr = @[@"searchBar",@"pnChart",@"test",@"水波纹",@"NFC",@"UIKit",@"轮播",@"FMDB",@"GCD",@"动画"];
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(rightBarButtonItemClicked)];
     self.navigationItem.rightBarButtonItem = rightItem;
@@ -111,6 +113,12 @@
             break;
         case 7:
             nextVC = [[FMDBViewController alloc] init];
+            break;
+        case 8:
+            nextVC = [[GCDTestViewController alloc] init];
+            break;
+        case 9:
+            nextVC = [[AnimationTestViewController alloc] init];
             break;
         default:
             break;
