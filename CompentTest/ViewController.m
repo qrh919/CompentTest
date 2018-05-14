@@ -10,6 +10,7 @@
 #import "SBViewController.h"
 #import "QPopMenuView.h"
 #import "YBPopupMenu.h"
+#import "MessageSendViewController.h"
 //#import "PNCTestViewController.h"
 #import "TestViewController.h"
 #import "QShowWaterViewController.h"
@@ -19,6 +20,9 @@
 #import "FMDBViewController.h"
 #import "GCDTestViewController.h"
 #import "AnimationTestViewController.h"
+#import "SystemJumpViewController.h"
+#import "FileDownloadViewController.h"
+#import "YYKitTestViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -40,7 +44,7 @@
     }
     
     //
-    self.dataArr = @[@"searchBar",@"pnChart",@"test",@"水波纹",@"NFC",@"UIKit",@"轮播",@"FMDB",@"GCD",@"动画"];
+    self.dataArr = @[@"searchBar",@"消息转发",@"test",@"水波纹",@"NFC",@"UIKit",@"轮播",@"FMDB",@"GCD",@"动画",@"系统内跳转",@"下载",@"YYKit"];
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(rightBarButtonItemClicked)];
     self.navigationItem.rightBarButtonItem = rightItem;
@@ -94,7 +98,7 @@
             nextVC = [[SBViewController alloc] init];
             break;
         case 1:
-            
+            nextVC = [[MessageSendViewController alloc] init];
             break;
         case 2:
             nextVC = [[TestViewController alloc] init];
@@ -119,6 +123,15 @@
             break;
         case 9:
             nextVC = [[AnimationTestViewController alloc] init];
+            break;
+        case 10:
+            nextVC = [[SystemJumpViewController alloc] init];
+            break;
+        case 11:
+            nextVC = [[FileDownloadViewController alloc] init];
+            break;
+        case 12:
+            nextVC = [[YYKitTestViewController alloc] init];
             break;
         default:
             break;
