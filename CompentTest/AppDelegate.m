@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MyATest.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [MyATest showMyName:@"张三"];
+    
     return YES;
 }
 
