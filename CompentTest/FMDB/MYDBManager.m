@@ -31,6 +31,7 @@ static NSString *_path;
 }
 
 +(void)createTableSql:(NSString *)sql{
+//    BOOL hasTb = [_db tableExists:@"tableName"];
     BOOL result = [_db executeUpdate:sql];
     if (result) {
         NSLog(@"创建表成功");
