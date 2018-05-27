@@ -4,7 +4,8 @@
 //
 //  Created by qrh on 2018/3/5.
 //  Copyright © 2018年 qrh. All rights reserved.
-//
+//  FMDB  默认是线程不安全
+//  如果需要解决并发问题可以使用FMDatabaseQueue
 
 #import <Foundation/Foundation.h>
 
