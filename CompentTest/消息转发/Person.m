@@ -17,19 +17,35 @@
 
 @implementation Person
 
-//1.静态转发
+//1.静态转发 - 实例方法
 +(BOOL)resolveInstanceMethod:(SEL)sel{
     NSString *selector = NSStringFromSelector(sel);
     if([selector isEqualToString:@"sendMessage:"]){
-        class_addMethod(self, sel, (IMP)sendMessage, "v@:@");
+        class_addMethod([self class], sel, (IMP)sendMessage, "v@:@");
     }
     
     return NO;
 }
+//OC消息发送底层每个方法都会有默认的2个参数 ：id 调用者 SEL 本身
 void sendMessage(id self,SEL _cmd,NSString *message){
     NSLog(@"message:%@",message);
 }
 
+//1.类方法 由于self class中只存在实例方法 所以在类方法中应该使用metaClass
++(BOOL)resolveClassMethod:(SEL)sel{
+    NSString *selector = NSStringFromSelector(sel);
+    if([selector isEqualToString:@"sendMessage:"]){
+        Class metaClass = objc_getMetaClass(class_getName([self class]));
+        class_addMethod(metaClass, sel, (IMP)sendMessage, "v@:@");
+    }
+    return NO;
+}
+
+//已下是实例方法的转发 类方法有对应的
+//上述代码中的methodSignatureForSelector、forwardInvocation、doesNotRecognizeSelector在类方法的转发过程不会被触发，需要将前面的“-”换成“＋”才会被触发（毕竟是查找类方法，有点区别）。
+//+ (void)forwardInvocation:(NSInvocation *)anInvocation {
+//   TODO...
+//}
 
 //2.对象转发
 -(id)forwardingTargetForSelector:(SEL)aSelector{
