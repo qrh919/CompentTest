@@ -14,10 +14,14 @@
 
 @implementation AppDelegate
 
+extern CFAbsoluteTime startTime;//跨文件访问
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    /*
+     启动之前优化点：减少编译时间(尽量删掉不用的分类、文件等) pod里面的不用的库删掉
+     */
+    NSLog(@"启动之前耗时%.f 秒",CFAbsoluteTimeGetCurrent()-startTime);
     [MyATest showMyName:@"张三"];
     
     return YES;

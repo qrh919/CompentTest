@@ -44,6 +44,8 @@
 		2E720D191F99F9E400BA6276 /* SBResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E720D181F99F9E400BA6276 /* SBResultViewController.m */; };
 		2E720D1C1F99FC1700BA6276 /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E720D1B1F99FC1700BA6276 /* SBViewController.m */; };
 		2E74FBBA204D2E2900D3849E /* FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E74FBB9204D2E2900D3849E /* FMDBViewController.m */; };
+		2E80D93A20BEE95500FA0238 /* NSObject+Leaks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E80D93920BEE95500FA0238 /* NSObject+Leaks.m */; };
+		2E80D93D20BEEF9500FA0238 /* UIViewController+Leaks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E80D93C20BEEF9500FA0238 /* UIViewController+Leaks.m */; };
 		2E9A8433202EE76A008D743C /* NFCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A8432202EE76A008D743C /* NFCHelper.m */; };
 		2ED4EED4204538AC0061EA87 /* CycleViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4EED3204538AC0061EA87 /* CycleViewViewController.m */; };
 		2ED4EED720453A820061EA87 /* CycleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4EED620453A820061EA87 /* CycleCollectionViewCell.m */; };
@@ -134,6 +136,10 @@
 		2E720D1B1F99FC1700BA6276 /* SBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBViewController.m; sourceTree = "<group>"; };
 		2E74FBB8204D2E2900D3849E /* FMDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDBViewController.h; sourceTree = "<group>"; };
 		2E74FBB9204D2E2900D3849E /* FMDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBViewController.m; sourceTree = "<group>"; };
+		2E80D93820BEE95500FA0238 /* NSObject+Leaks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Leaks.h"; sourceTree = "<group>"; };
+		2E80D93920BEE95500FA0238 /* NSObject+Leaks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Leaks.m"; sourceTree = "<group>"; };
+		2E80D93B20BEEF9500FA0238 /* UIViewController+Leaks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Leaks.h"; sourceTree = "<group>"; };
+		2E80D93C20BEEF9500FA0238 /* UIViewController+Leaks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Leaks.m"; sourceTree = "<group>"; };
 		2E9A8431202EE76A008D743C /* NFCHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFCHelper.h; sourceTree = "<group>"; };
 		2E9A8432202EE76A008D743C /* NFCHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFCHelper.m; sourceTree = "<group>"; };
 		2ED4EED2204538AC0061EA87 /* CycleViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleViewViewController.h; sourceTree = "<group>"; };
@@ -358,6 +364,7 @@
 		2E720CFF1F99F18B00BA6276 /* CompentTest */ = {
 			isa = PBXGroup;
 			children = (
+				2E80D93720BEE53E00FA0238 /* runtime */,
 				2E4BF67E20AD71B300DD7FBB /* 静态库打包 */,
 				2E03EFD3205631F600B7DD5C /* Base */,
 				2E06212E20A47E88002CC0DF /* 消息转发 */,
@@ -411,6 +418,17 @@
 				2E6ED874204D39F6009C398D /* MYDBManager.m */,
 			);
 			path = FMDB;
+			sourceTree = "<group>";
+		};
+		2E80D93720BEE53E00FA0238 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				2E80D93820BEE95500FA0238 /* NSObject+Leaks.h */,
+				2E80D93920BEE95500FA0238 /* NSObject+Leaks.m */,
+				2E80D93B20BEEF9500FA0238 /* UIViewController+Leaks.h */,
+				2E80D93C20BEEF9500FA0238 /* UIViewController+Leaks.m */,
+			);
+			path = runtime;
 			sourceTree = "<group>";
 		};
 		2ED4EED12045388F0061EA87 /* 轮播 */ = {
@@ -594,6 +612,7 @@
 				2ED4EED4204538AC0061EA87 /* CycleViewViewController.m in Sources */,
 				2E03EFCE205630FB00B7DD5C /* YYKitTestViewController.m in Sources */,
 				2EFFD60C202C8ADE00812C49 /* NFCTestViewController.m in Sources */,
+				2E80D93D20BEEF9500FA0238 /* UIViewController+Leaks.m in Sources */,
 				2E61075B1FA0310300B2B6D9 /* QPopMenuView.m in Sources */,
 				2E74FBBA204D2E2900D3849E /* FMDBViewController.m in Sources */,
 				2E420B7D2046518B00A6684E /* LoadTest.m in Sources */,
@@ -601,6 +620,7 @@
 				2E720D101F99F18B00BA6276 /* main.m in Sources */,
 				2ED4EED720453A820061EA87 /* CycleCollectionViewCell.m in Sources */,
 				2E6ED872204D374C009C398D /* Student.m in Sources */,
+				2E80D93A20BEE95500FA0238 /* NSObject+Leaks.m in Sources */,
 				2E03EFD92056324C00B7DD5C /* BaseTableViewController.m in Sources */,
 				2E06213720A48250002CC0DF /* Animal.m in Sources */,
 				2EFF7D502043E45D008C18B9 /* ChangeCellHeightController.m in Sources */,
