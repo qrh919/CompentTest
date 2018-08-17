@@ -23,6 +23,8 @@
 #import "SystemJumpViewController.h"
 #import "FileDownloadViewController.h"
 #import "YYKitTestViewController.h"
+#import "BMPChangeViewController.h"
+#import "RunloopViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -44,7 +46,7 @@
     }
     
     //
-    self.dataArr = @[@"searchBar",@"消息转发",@"test",@"水波纹",@"NFC",@"UIKit",@"轮播",@"FMDB",@"GCD",@"动画",@"系统内跳转",@"下载",@"YYKit"];
+    self.dataArr = @[@"searchBar",@"消息转发",@"test",@"水波纹",@"NFC",@"UIKit",@"轮播",@"FMDB",@"GCD",@"动画",@"系统内跳转",@"下载",@"YYKit",@"UIImage转BMP",@"runloop"];
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(rightBarButtonItemClicked)];
     self.navigationItem.rightBarButtonItem = rightItem;
@@ -133,6 +135,12 @@
         case 12:
             nextVC = [[YYKitTestViewController alloc] init];
             break;
+        case 13:
+            nextVC = [[BMPChangeViewController alloc] init];
+            break;
+        case 14:
+            nextVC = [[RunloopViewController alloc] init];
+            break;
         default:
             break;
     }
@@ -144,6 +152,7 @@
 -(UITableView *)tableView{
     if(!_tableView){
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         _tableView.delegate = self;
         _tableView.dataSource = self;
     }

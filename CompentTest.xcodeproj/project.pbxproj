@@ -47,6 +47,9 @@
 		2E80D93A20BEE95500FA0238 /* NSObject+Leaks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E80D93920BEE95500FA0238 /* NSObject+Leaks.m */; };
 		2E80D93D20BEEF9500FA0238 /* UIViewController+Leaks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E80D93C20BEEF9500FA0238 /* UIViewController+Leaks.m */; };
 		2E9A8433202EE76A008D743C /* NFCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A8432202EE76A008D743C /* NFCHelper.m */; };
+		2EA3B322212523B900F3E863 /* RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3B321212523B900F3E863 /* RunloopViewController.m */; };
+		2EA3B3252125241B00F3E863 /* MyThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3B3242125241B00F3E863 /* MyThread.m */; };
+		2EC2434E21204057009C201B /* BMPChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2434D21204057009C201B /* BMPChangeViewController.m */; };
 		2ED4EED4204538AC0061EA87 /* CycleViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4EED3204538AC0061EA87 /* CycleViewViewController.m */; };
 		2ED4EED720453A820061EA87 /* CycleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4EED620453A820061EA87 /* CycleCollectionViewCell.m */; };
 		2EFF7D502043E45D008C18B9 /* ChangeCellHeightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF7D4F2043E45D008C18B9 /* ChangeCellHeightController.m */; };
@@ -142,6 +145,12 @@
 		2E80D93C20BEEF9500FA0238 /* UIViewController+Leaks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Leaks.m"; sourceTree = "<group>"; };
 		2E9A8431202EE76A008D743C /* NFCHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFCHelper.h; sourceTree = "<group>"; };
 		2E9A8432202EE76A008D743C /* NFCHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFCHelper.m; sourceTree = "<group>"; };
+		2EA3B320212523B900F3E863 /* RunloopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopViewController.h; sourceTree = "<group>"; };
+		2EA3B321212523B900F3E863 /* RunloopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopViewController.m; sourceTree = "<group>"; };
+		2EA3B3232125241B00F3E863 /* MyThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyThread.h; sourceTree = "<group>"; };
+		2EA3B3242125241B00F3E863 /* MyThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyThread.m; sourceTree = "<group>"; };
+		2EC2434C21204057009C201B /* BMPChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMPChangeViewController.h; sourceTree = "<group>"; };
+		2EC2434D21204057009C201B /* BMPChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMPChangeViewController.m; sourceTree = "<group>"; };
 		2ED4EED2204538AC0061EA87 /* CycleViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleViewViewController.h; sourceTree = "<group>"; };
 		2ED4EED3204538AC0061EA87 /* CycleViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleViewViewController.m; sourceTree = "<group>"; };
 		2ED4EED520453A820061EA87 /* CycleCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleCollectionViewCell.h; sourceTree = "<group>"; };
@@ -364,6 +373,8 @@
 		2E720CFF1F99F18B00BA6276 /* CompentTest */ = {
 			isa = PBXGroup;
 			children = (
+				2EA3B31F2125238400F3E863 /* runloop */,
+				2EC2434B2120402F009C201B /* 图片转换 */,
 				2E80D93720BEE53E00FA0238 /* runtime */,
 				2E4BF67E20AD71B300DD7FBB /* 静态库打包 */,
 				2E03EFD3205631F600B7DD5C /* Base */,
@@ -429,6 +440,26 @@
 				2E80D93C20BEEF9500FA0238 /* UIViewController+Leaks.m */,
 			);
 			path = runtime;
+			sourceTree = "<group>";
+		};
+		2EA3B31F2125238400F3E863 /* runloop */ = {
+			isa = PBXGroup;
+			children = (
+				2EA3B320212523B900F3E863 /* RunloopViewController.h */,
+				2EA3B321212523B900F3E863 /* RunloopViewController.m */,
+				2EA3B3232125241B00F3E863 /* MyThread.h */,
+				2EA3B3242125241B00F3E863 /* MyThread.m */,
+			);
+			path = runloop;
+			sourceTree = "<group>";
+		};
+		2EC2434B2120402F009C201B /* 图片转换 */ = {
+			isa = PBXGroup;
+			children = (
+				2EC2434C21204057009C201B /* BMPChangeViewController.h */,
+				2EC2434D21204057009C201B /* BMPChangeViewController.m */,
+			);
+			path = "图片转换";
 			sourceTree = "<group>";
 		};
 		2ED4EED12045388F0061EA87 /* 轮播 */ = {
@@ -607,17 +638,20 @@
 				2E3775A92052309800160BEE /* FileDownloadViewController.m in Sources */,
 				2E02E989204EA17900EAEC0D /* QDisGroup.m in Sources */,
 				2E45FB692050DA6C00C9C7FC /* SnapshotViewController.m in Sources */,
+				2EC2434E21204057009C201B /* BMPChangeViewController.m in Sources */,
 				2E02E984204E90B600EAEC0D /* CycleLabel.m in Sources */,
 				2E9A8433202EE76A008D743C /* NFCHelper.m in Sources */,
 				2ED4EED4204538AC0061EA87 /* CycleViewViewController.m in Sources */,
 				2E03EFCE205630FB00B7DD5C /* YYKitTestViewController.m in Sources */,
 				2EFFD60C202C8ADE00812C49 /* NFCTestViewController.m in Sources */,
+				2EA3B322212523B900F3E863 /* RunloopViewController.m in Sources */,
 				2E80D93D20BEEF9500FA0238 /* UIViewController+Leaks.m in Sources */,
 				2E61075B1FA0310300B2B6D9 /* QPopMenuView.m in Sources */,
 				2E74FBBA204D2E2900D3849E /* FMDBViewController.m in Sources */,
 				2E420B7D2046518B00A6684E /* LoadTest.m in Sources */,
 				2E369D5F204FF2CD00813D3A /* GCDTestViewController.m in Sources */,
 				2E720D101F99F18B00BA6276 /* main.m in Sources */,
+				2EA3B3252125241B00F3E863 /* MyThread.m in Sources */,
 				2ED4EED720453A820061EA87 /* CycleCollectionViewCell.m in Sources */,
 				2E6ED872204D374C009C398D /* Student.m in Sources */,
 				2E80D93A20BEE95500FA0238 /* NSObject+Leaks.m in Sources */,
