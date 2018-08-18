@@ -1,0 +1,6 @@
+module Pods_CompentTest {
+  umbrella header "Pods-CompentTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -15,6 +15,7 @@
 #import "TestViewController.h"
 #import "QShowWaterViewController.h"
 #import "NFCTestViewController.h"
+#import "RACRootViewController.h"
 #import "ChangeCellHeightController.h"
 #import "CycleViewViewController.h"
 #import "FMDBViewController.h"
@@ -29,6 +30,7 @@
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataArr;
+@property (nonatomic, strong) NSArray *vcArr;
 @end
 
 @implementation ViewController
@@ -45,8 +47,9 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
-    //
-    self.dataArr = @[@"searchBar",@"消息转发",@"test",@"水波纹",@"NFC",@"UIKit",@"轮播",@"FMDB",@"GCD",@"动画",@"系统内跳转",@"下载",@"YYKit",@"UIImage转BMP",@"runloop"];
+    self.dataArr = @[@"searchBar",@"消息转发",@"test",@"水波纹",@"NFC",@"RAC",@"UIKit",@"轮播",@"FMDB",@"GCD",@"动画",@"系统内跳转",@"下载",@"YYKit",@"UIImage转BMP",@"runloop"];
+
+    self.vcArr = @[@"SBViewController",@"MessageSendViewController",@"TestViewController",@"QShowWaterViewController",@"NFCTestViewController",@"RACRootViewController",@"ChangeCellHeightController",@"CycleViewViewController",@"FMDBViewController",@"GCDTestViewController",@"AnimationTestViewController",@"SystemJumpViewController",@"FileDownloadViewController",@"YYKitTestViewController",@"BMPChangeViewController",@"RunloopViewController"];
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(rightBarButtonItemClicked)];
     self.navigationItem.rightBarButtonItem = rightItem;
@@ -94,56 +97,7 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    UIViewController *nextVC;
-    switch (indexPath.row) {
-        case 0:
-            nextVC = [[SBViewController alloc] init];
-            break;
-        case 1:
-            nextVC = [[MessageSendViewController alloc] init];
-            break;
-        case 2:
-            nextVC = [[TestViewController alloc] init];
-            break;
-        case 3:
-            nextVC = [[QShowWaterViewController alloc] init];
-            break;
-        case 4:
-            nextVC = [[NFCTestViewController alloc] init];
-            break;
-        case 5:
-            nextVC = [[ChangeCellHeightController alloc] init];
-            break;
-        case 6:
-            nextVC = [[CycleViewViewController alloc] init];
-            break;
-        case 7:
-            nextVC = [[FMDBViewController alloc] init];
-            break;
-        case 8:
-            nextVC = [[GCDTestViewController alloc] init];
-            break;
-        case 9:
-            nextVC = [[AnimationTestViewController alloc] init];
-            break;
-        case 10:
-            nextVC = [[SystemJumpViewController alloc] init];
-            break;
-        case 11:
-            nextVC = [[FileDownloadViewController alloc] init];
-            break;
-        case 12:
-            nextVC = [[YYKitTestViewController alloc] init];
-            break;
-        case 13:
-            nextVC = [[BMPChangeViewController alloc] init];
-            break;
-        case 14:
-            nextVC = [[RunloopViewController alloc] init];
-            break;
-        default:
-            break;
-    }
+    UIViewController *nextVC = [NSClassFromString([_vcArr objectAtIndex:indexPath.row]) new];
     if(nextVC){
         [self.navigationController pushViewController:nextVC animated:YES];
     }

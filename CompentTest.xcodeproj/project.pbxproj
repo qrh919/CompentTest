@@ -49,6 +49,9 @@
 		2E9A8433202EE76A008D743C /* NFCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A8432202EE76A008D743C /* NFCHelper.m */; };
 		2EA3B322212523B900F3E863 /* RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3B321212523B900F3E863 /* RunloopViewController.m */; };
 		2EA3B3252125241B00F3E863 /* MyThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3B3242125241B00F3E863 /* MyThread.m */; };
+		2EA3B3292127C96A00F3E863 /* RACRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3B3282127C96A00F3E863 /* RACRootViewController.m */; };
+		2EA3B32C2127D3D600F3E863 /* RACShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3B32B2127D3D600F3E863 /* RACShowView.m */; };
+		2EA3B32F21281B0100F3E863 /* RACAPITestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3B32E21281B0100F3E863 /* RACAPITestViewController.m */; };
 		2EC2434E21204057009C201B /* BMPChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2434D21204057009C201B /* BMPChangeViewController.m */; };
 		2ED4EED4204538AC0061EA87 /* CycleViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4EED3204538AC0061EA87 /* CycleViewViewController.m */; };
 		2ED4EED720453A820061EA87 /* CycleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4EED620453A820061EA87 /* CycleCollectionViewCell.m */; };
@@ -149,6 +152,12 @@
 		2EA3B321212523B900F3E863 /* RunloopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopViewController.m; sourceTree = "<group>"; };
 		2EA3B3232125241B00F3E863 /* MyThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyThread.h; sourceTree = "<group>"; };
 		2EA3B3242125241B00F3E863 /* MyThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyThread.m; sourceTree = "<group>"; };
+		2EA3B3272127C96A00F3E863 /* RACRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACRootViewController.h; sourceTree = "<group>"; };
+		2EA3B3282127C96A00F3E863 /* RACRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACRootViewController.m; sourceTree = "<group>"; };
+		2EA3B32A2127D3D600F3E863 /* RACShowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACShowView.h; sourceTree = "<group>"; };
+		2EA3B32B2127D3D600F3E863 /* RACShowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACShowView.m; sourceTree = "<group>"; };
+		2EA3B32D21281B0100F3E863 /* RACAPITestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACAPITestViewController.h; sourceTree = "<group>"; };
+		2EA3B32E21281B0100F3E863 /* RACAPITestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACAPITestViewController.m; sourceTree = "<group>"; };
 		2EC2434C21204057009C201B /* BMPChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMPChangeViewController.h; sourceTree = "<group>"; };
 		2EC2434D21204057009C201B /* BMPChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMPChangeViewController.m; sourceTree = "<group>"; };
 		2ED4EED2204538AC0061EA87 /* CycleViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleViewViewController.h; sourceTree = "<group>"; };
@@ -388,6 +397,7 @@
 				2ED4EED12045388F0061EA87 /* 轮播 */,
 				2EFF7D4D2043E41A008C18B9 /* UIKitTest */,
 				2EFFD609202C8AC300812C49 /* NFC */,
+				2EA3B3262127C94A00F3E863 /* RAC */,
 				2E3B01F0201EC73500EE1EA8 /* 水波纹 */,
 				2E44C6311FFE005F005F9037 /* test */,
 				2E6107581FA0308A00B2B6D9 /* popMenu */,
@@ -453,6 +463,19 @@
 			path = runloop;
 			sourceTree = "<group>";
 		};
+		2EA3B3262127C94A00F3E863 /* RAC */ = {
+			isa = PBXGroup;
+			children = (
+				2EA3B32A2127D3D600F3E863 /* RACShowView.h */,
+				2EA3B32B2127D3D600F3E863 /* RACShowView.m */,
+				2EA3B3272127C96A00F3E863 /* RACRootViewController.h */,
+				2EA3B3282127C96A00F3E863 /* RACRootViewController.m */,
+				2EA3B32D21281B0100F3E863 /* RACAPITestViewController.h */,
+				2EA3B32E21281B0100F3E863 /* RACAPITestViewController.m */,
+			);
+			path = RAC;
+			sourceTree = "<group>";
+		};
 		2EC2434B2120402F009C201B /* 图片转换 */ = {
 			isa = PBXGroup;
 			children = (
@@ -510,8 +533,6 @@
 				2E720CF91F99F18B00BA6276 /* Sources */,
 				2E720CFA1F99F18B00BA6276 /* Frameworks */,
 				2E720CFB1F99F18B00BA6276 /* Resources */,
-				6C131696EEB08E438D3C6AF8 /* [CP] Embed Pods Frameworks */,
-				14593862A3E30C8F24EF0A7A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -569,36 +590,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14593862A3E30C8F24EF0A7A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CompentTest/Pods-CompentTest-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6C131696EEB08E438D3C6AF8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CompentTest/Pods-CompentTest-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DCFC432A3FA4BDBD8916B670 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -644,9 +635,11 @@
 				2ED4EED4204538AC0061EA87 /* CycleViewViewController.m in Sources */,
 				2E03EFCE205630FB00B7DD5C /* YYKitTestViewController.m in Sources */,
 				2EFFD60C202C8ADE00812C49 /* NFCTestViewController.m in Sources */,
+				2EA3B32F21281B0100F3E863 /* RACAPITestViewController.m in Sources */,
 				2EA3B322212523B900F3E863 /* RunloopViewController.m in Sources */,
 				2E80D93D20BEEF9500FA0238 /* UIViewController+Leaks.m in Sources */,
 				2E61075B1FA0310300B2B6D9 /* QPopMenuView.m in Sources */,
+				2EA3B32C2127D3D600F3E863 /* RACShowView.m in Sources */,
 				2E74FBBA204D2E2900D3849E /* FMDBViewController.m in Sources */,
 				2E420B7D2046518B00A6684E /* LoadTest.m in Sources */,
 				2E369D5F204FF2CD00813D3A /* GCDTestViewController.m in Sources */,
@@ -659,6 +652,7 @@
 				2E06213720A48250002CC0DF /* Animal.m in Sources */,
 				2EFF7D502043E45D008C18B9 /* ChangeCellHeightController.m in Sources */,
 				2E720D191F99F9E400BA6276 /* SBResultViewController.m in Sources */,
+				2EA3B3292127C96A00F3E863 /* RACRootViewController.m in Sources */,
 				2E6107691FA0768100B2B6D9 /* YBPopupMenu.m in Sources */,
 				2E720D1C1F99FC1700BA6276 /* SBViewController.m in Sources */,
 				2E44C6341FFE007B005F9037 /* TestViewController.m in Sources */,
@@ -803,7 +797,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CompentTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -822,7 +816,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CompentTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

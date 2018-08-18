@@ -7,5 +7,7 @@ target 'CompentTest' do
 pod 'FMDB', '~> 2.7.2'
 pod 'YYKit', '~> 1.0.9'
 pod 'Masonry', '~> 1.1.0'
+pod 'ReactiveCocoa', '2.5'
+pod 'Toast'
 
 end
