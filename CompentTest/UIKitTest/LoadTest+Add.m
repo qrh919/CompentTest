@@ -11,7 +11,11 @@
 @implementation LoadTest (Add)
 
 +(void)load{
-    NSLog(@"-%@-",NSStringFromClass([self class]));
+    NSLog(@"分类%@",NSStringFromClass([self class]));
+}
+
++(void)initialize{
+    NSLog(@"分类 %s",__func__);
 }
 
 @end

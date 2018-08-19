@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegate+Extension.h"
 #import "MyATest.h"
 @interface AppDelegate ()
 
@@ -23,6 +24,9 @@ extern CFAbsoluteTime startTime;//跨文件访问
      */
     NSLog(@"启动之前耗时%.f 秒",CFAbsoluteTimeGetCurrent()-startTime);
     [MyATest showMyName:@"张三"];
+    
+    self.name = @"compentTest";
+    NSLog(@"%@",self.name);
     
     return YES;
 }

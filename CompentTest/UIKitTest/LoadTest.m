@@ -56,7 +56,11 @@ typedef struct loadPage{
 }
 
 +(void)load{
-    NSLog(@"%@",NSStringFromClass([self class]));
+    NSLog(@"父类%@",NSStringFromClass([self class]));
+}
+
++(void)initialize{
+    NSLog(@"父类 %s",__func__);
 }
 
 -(void)showData{

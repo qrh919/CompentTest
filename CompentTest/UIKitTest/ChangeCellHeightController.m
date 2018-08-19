@@ -63,10 +63,10 @@
         
         make.center.equalTo(myView);
     }];
-    
+    */
     LoadTest *test = [[LoadTest alloc] init];
     [test showData];
-    */
+    
 }
 
 - (void)didReceiveMemoryWarning {

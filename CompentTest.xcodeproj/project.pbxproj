@@ -55,6 +55,8 @@
 		2EC2434E21204057009C201B /* BMPChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2434D21204057009C201B /* BMPChangeViewController.m */; };
 		2ED4EED4204538AC0061EA87 /* CycleViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4EED3204538AC0061EA87 /* CycleViewViewController.m */; };
 		2ED4EED720453A820061EA87 /* CycleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4EED620453A820061EA87 /* CycleCollectionViewCell.m */; };
+		2EDA8C8B2129AF4100F2F35A /* AppDelegate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA8C8A2129AF4000F2F35A /* AppDelegate+Extension.m */; };
+		2EDA8C8E2129B25600F2F35A /* SubLoadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA8C8D2129B25600F2F35A /* SubLoadTest.m */; };
 		2EFF7D502043E45D008C18B9 /* ChangeCellHeightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF7D4F2043E45D008C18B9 /* ChangeCellHeightController.m */; };
 		2EFFD60C202C8ADE00812C49 /* NFCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFFD60B202C8ADE00812C49 /* NFCTestViewController.m */; };
 		DBA03FA11DA1D07C6B41B3AF /* libPods-CompentTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E65FDB87E3A4FC3063878012 /* libPods-CompentTest.a */; };
@@ -164,6 +166,10 @@
 		2ED4EED3204538AC0061EA87 /* CycleViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleViewViewController.m; sourceTree = "<group>"; };
 		2ED4EED520453A820061EA87 /* CycleCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleCollectionViewCell.h; sourceTree = "<group>"; };
 		2ED4EED620453A820061EA87 /* CycleCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleCollectionViewCell.m; sourceTree = "<group>"; };
+		2EDA8C892129AF4000F2F35A /* AppDelegate+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Extension.h"; sourceTree = "<group>"; };
+		2EDA8C8A2129AF4000F2F35A /* AppDelegate+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Extension.m"; sourceTree = "<group>"; };
+		2EDA8C8C2129B25600F2F35A /* SubLoadTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubLoadTest.h; sourceTree = "<group>"; };
+		2EDA8C8D2129B25600F2F35A /* SubLoadTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubLoadTest.m; sourceTree = "<group>"; };
 		2EFB79821FD5224200524CB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2EFB79831FD5224A00524CB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2EFF7D4E2043E45D008C18B9 /* ChangeCellHeightController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeCellHeightController.h; sourceTree = "<group>"; };
@@ -404,6 +410,8 @@
 				2E720D161F99F9B500BA6276 /* searchBar */,
 				2E720D001F99F18B00BA6276 /* AppDelegate.h */,
 				2E720D011F99F18B00BA6276 /* AppDelegate.m */,
+				2EDA8C892129AF4000F2F35A /* AppDelegate+Extension.h */,
+				2EDA8C8A2129AF4000F2F35A /* AppDelegate+Extension.m */,
 				2E720D031F99F18B00BA6276 /* ViewController.h */,
 				2E720D041F99F18B00BA6276 /* ViewController.m */,
 				2E720D061F99F18B00BA6276 /* Main.storyboard */,
@@ -507,6 +515,8 @@
 				2E420B7C2046518B00A6684E /* LoadTest.m */,
 				2E420B81204651BC00A6684E /* LoadTest+Add.h */,
 				2E420B82204651BC00A6684E /* LoadTest+Add.m */,
+				2EDA8C8C2129B25600F2F35A /* SubLoadTest.h */,
+				2EDA8C8D2129B25600F2F35A /* SubLoadTest.m */,
 			);
 			path = UIKitTest;
 			sourceTree = "<group>";
@@ -617,6 +627,7 @@
 			files = (
 				2E720D051F99F18B00BA6276 /* ViewController.m in Sources */,
 				2E3775AC2052310F00160BEE /* QFileDLMananger.m in Sources */,
+				2EDA8C8E2129B25600F2F35A /* SubLoadTest.m in Sources */,
 				2E45FB6D2051129D00C9C7FC /* SystemJumpViewController.m in Sources */,
 				2E420B83204651BC00A6684E /* LoadTest+Add.m in Sources */,
 				2E6ED86F204D36CB009C398D /* StudentAddEditViewController.m in Sources */,
@@ -661,6 +672,7 @@
 				2E45FB652050DA2400C9C7FC /* AnimationTestViewController.m in Sources */,
 				2E3B01F6201EC86700EE1EA8 /* QWaterView.m in Sources */,
 				2E3B01F3201EC84D00EE1EA8 /* QShowWaterViewController.m in Sources */,
+				2EDA8C8B2129AF4100F2F35A /* AppDelegate+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
