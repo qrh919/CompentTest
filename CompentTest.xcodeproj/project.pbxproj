@@ -25,6 +25,10 @@
 		2E3B01F6201EC86700EE1EA8 /* QWaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B01F5201EC86600EE1EA8 /* QWaterView.m */; };
 		2E420B7D2046518B00A6684E /* LoadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E420B7C2046518B00A6684E /* LoadTest.m */; };
 		2E420B83204651BC00A6684E /* LoadTest+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E420B82204651BC00A6684E /* LoadTest+Add.m */; };
+		2E42D2E6212D5F7B008B9C0B /* KVOTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E42D2E5212D5F7B008B9C0B /* KVOTestViewController.m */; };
+		2E42D2E9212D5FB0008B9C0B /* KVOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E42D2E8212D5FB0008B9C0B /* KVOPerson.m */; };
+		2E42D2EC212D68EC008B9C0B /* NSObject+QKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E42D2EB212D68EC008B9C0B /* NSObject+QKVO.m */; };
+		2E42D2EF212E9968008B9C0B /* NSObject+QKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E42D2EE212E9968008B9C0B /* NSObject+QKVC.m */; };
 		2E44C6341FFE007B005F9037 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E44C6331FFE007B005F9037 /* TestViewController.m */; };
 		2E45FB652050DA2400C9C7FC /* AnimationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E45FB642050DA2400C9C7FC /* AnimationTestViewController.m */; };
 		2E45FB692050DA6C00C9C7FC /* SnapshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E45FB682050DA6C00C9C7FC /* SnapshotViewController.m */; };
@@ -100,6 +104,14 @@
 		2E420B7C2046518B00A6684E /* LoadTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadTest.m; sourceTree = "<group>"; };
 		2E420B81204651BC00A6684E /* LoadTest+Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoadTest+Add.h"; sourceTree = "<group>"; };
 		2E420B82204651BC00A6684E /* LoadTest+Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LoadTest+Add.m"; sourceTree = "<group>"; };
+		2E42D2E4212D5F7B008B9C0B /* KVOTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOTestViewController.h; sourceTree = "<group>"; };
+		2E42D2E5212D5F7B008B9C0B /* KVOTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOTestViewController.m; sourceTree = "<group>"; };
+		2E42D2E7212D5FB0008B9C0B /* KVOPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOPerson.h; sourceTree = "<group>"; };
+		2E42D2E8212D5FB0008B9C0B /* KVOPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOPerson.m; sourceTree = "<group>"; };
+		2E42D2EA212D68EC008B9C0B /* NSObject+QKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+QKVO.h"; sourceTree = "<group>"; };
+		2E42D2EB212D68EC008B9C0B /* NSObject+QKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+QKVO.m"; sourceTree = "<group>"; };
+		2E42D2ED212E9968008B9C0B /* NSObject+QKVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+QKVC.h"; sourceTree = "<group>"; };
+		2E42D2EE212E9968008B9C0B /* NSObject+QKVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+QKVC.m"; sourceTree = "<group>"; };
 		2E44C6321FFE007B005F9037 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		2E44C6331FFE007B005F9037 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		2E45FB632050DA2400C9C7FC /* AnimationTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationTestViewController.h; sourceTree = "<group>"; };
@@ -282,6 +294,21 @@
 			path = "水波纹";
 			sourceTree = "<group>";
 		};
+		2E42D2E3212D5F5C008B9C0B /* KVO&KVC */ = {
+			isa = PBXGroup;
+			children = (
+				2E42D2E4212D5F7B008B9C0B /* KVOTestViewController.h */,
+				2E42D2E5212D5F7B008B9C0B /* KVOTestViewController.m */,
+				2E42D2E7212D5FB0008B9C0B /* KVOPerson.h */,
+				2E42D2E8212D5FB0008B9C0B /* KVOPerson.m */,
+				2E42D2EA212D68EC008B9C0B /* NSObject+QKVO.h */,
+				2E42D2EB212D68EC008B9C0B /* NSObject+QKVO.m */,
+				2E42D2ED212E9968008B9C0B /* NSObject+QKVC.h */,
+				2E42D2EE212E9968008B9C0B /* NSObject+QKVC.m */,
+			);
+			path = "KVO&KVC";
+			sourceTree = "<group>";
+		};
 		2E44C6311FFE005F005F9037 /* test */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,9 +415,10 @@
 		2E720CFF1F99F18B00BA6276 /* CompentTest */ = {
 			isa = PBXGroup;
 			children = (
-				2EA3B31F2125238400F3E863 /* runloop */,
+				2E42D2E3212D5F5C008B9C0B /* KVO&KVC */,
 				2EC2434B2120402F009C201B /* 图片转换 */,
 				2E80D93720BEE53E00FA0238 /* runtime */,
+				2EA3B31F2125238400F3E863 /* runloop */,
 				2E4BF67E20AD71B300DD7FBB /* 静态库打包 */,
 				2E03EFD3205631F600B7DD5C /* Base */,
 				2E06212E20A47E88002CC0DF /* 消息转发 */,
@@ -627,6 +655,7 @@
 			files = (
 				2E720D051F99F18B00BA6276 /* ViewController.m in Sources */,
 				2E3775AC2052310F00160BEE /* QFileDLMananger.m in Sources */,
+				2E42D2EF212E9968008B9C0B /* NSObject+QKVC.m in Sources */,
 				2EDA8C8E2129B25600F2F35A /* SubLoadTest.m in Sources */,
 				2E45FB6D2051129D00C9C7FC /* SystemJumpViewController.m in Sources */,
 				2E420B83204651BC00A6684E /* LoadTest+Add.m in Sources */,
@@ -650,13 +679,16 @@
 				2EA3B322212523B900F3E863 /* RunloopViewController.m in Sources */,
 				2E80D93D20BEEF9500FA0238 /* UIViewController+Leaks.m in Sources */,
 				2E61075B1FA0310300B2B6D9 /* QPopMenuView.m in Sources */,
+				2E42D2EC212D68EC008B9C0B /* NSObject+QKVO.m in Sources */,
 				2EA3B32C2127D3D600F3E863 /* RACShowView.m in Sources */,
 				2E74FBBA204D2E2900D3849E /* FMDBViewController.m in Sources */,
 				2E420B7D2046518B00A6684E /* LoadTest.m in Sources */,
 				2E369D5F204FF2CD00813D3A /* GCDTestViewController.m in Sources */,
 				2E720D101F99F18B00BA6276 /* main.m in Sources */,
 				2EA3B3252125241B00F3E863 /* MyThread.m in Sources */,
+				2E42D2E9212D5FB0008B9C0B /* KVOPerson.m in Sources */,
 				2ED4EED720453A820061EA87 /* CycleCollectionViewCell.m in Sources */,
+				2E42D2E6212D5F7B008B9C0B /* KVOTestViewController.m in Sources */,
 				2E6ED872204D374C009C398D /* Student.m in Sources */,
 				2E80D93A20BEE95500FA0238 /* NSObject+Leaks.m in Sources */,
 				2E03EFD92056324C00B7DD5C /* BaseTableViewController.m in Sources */,
@@ -808,6 +840,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = CompentTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -827,6 +860,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = CompentTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

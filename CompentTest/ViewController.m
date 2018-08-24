@@ -47,9 +47,9 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
-    self.dataArr = @[@"searchBar",@"消息转发",@"test",@"水波纹",@"NFC",@"RAC",@"UIKit",@"轮播",@"FMDB",@"GCD",@"动画",@"系统内跳转",@"下载",@"YYKit",@"UIImage转BMP",@"runloop"];
+    self.dataArr = @[@"searchBar",@"消息转发",@"test",@"水波纹",@"NFC",@"RAC",@"UIKit",@"轮播",@"FMDB",@"GCD",@"动画",@"系统内跳转",@"下载",@"YYKit",@"UIImage转BMP",@"runloop",@"kvo"];
 
-    self.vcArr = @[@"SBViewController",@"MessageSendViewController",@"TestViewController",@"QShowWaterViewController",@"NFCTestViewController",@"RACRootViewController",@"ChangeCellHeightController",@"CycleViewViewController",@"FMDBViewController",@"GCDTestViewController",@"AnimationTestViewController",@"SystemJumpViewController",@"FileDownloadViewController",@"YYKitTestViewController",@"BMPChangeViewController",@"RunloopViewController"];
+    self.vcArr = @[@"SBViewController",@"MessageSendViewController",@"TestViewController",@"QShowWaterViewController",@"NFCTestViewController",@"RACRootViewController",@"ChangeCellHeightController",@"CycleViewViewController",@"FMDBViewController",@"GCDTestViewController",@"AnimationTestViewController",@"SystemJumpViewController",@"FileDownloadViewController",@"YYKitTestViewController",@"BMPChangeViewController",@"RunloopViewController",@"KVOTestViewController"];
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(rightBarButtonItemClicked)];
     self.navigationItem.rightBarButtonItem = rightItem;
