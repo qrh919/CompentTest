@@ -11,7 +11,7 @@
 #import "QPopMenuView.h"
 #import "YBPopupMenu.h"
 #import "MessageSendViewController.h"
-//#import "PNCTestViewController.h"
+#import "NFCTestViewController.h"
 #import "TestViewController.h"
 #import "QShowWaterViewController.h"
 #import "NFCTestViewController.h"
@@ -26,6 +26,7 @@
 #import "YYKitTestViewController.h"
 #import "BMPChangeViewController.h"
 #import "RunloopViewController.h"
+#import "SignatureViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -47,9 +48,9 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
-    self.dataArr = @[@"searchBar",@"消息转发",@"test",@"水波纹",@"NFC",@"RAC",@"UIKit",@"轮播",@"FMDB",@"GCD",@"动画",@"系统内跳转",@"下载",@"YYKit",@"UIImage转BMP",@"runloop",@"kvo"];
+    self.dataArr = @[@"searchBar",@"消息转发",@"test",@"水波纹",@"NFC",@"RAC",@"UIKit",@"轮播",@"FMDB",@"GCD",@"动画",@"系统内跳转",@"下载",@"YYKit",@"UIImage转BMP",@"runloop",@"kvo",@"绘制签名"];
 
-    self.vcArr = @[@"SBViewController",@"MessageSendViewController",@"TestViewController",@"QShowWaterViewController",@"NFCTestViewController",@"RACRootViewController",@"ChangeCellHeightController",@"CycleViewViewController",@"FMDBViewController",@"GCDTestViewController",@"AnimationTestViewController",@"SystemJumpViewController",@"FileDownloadViewController",@"YYKitTestViewController",@"BMPChangeViewController",@"RunloopViewController",@"KVOTestViewController"];
+    self.vcArr = @[@"SBViewController",@"MessageSendViewController",@"TestViewController",@"QShowWaterViewController",@"NFCTestViewController",@"RACRootViewController",@"ChangeCellHeightController",@"CycleViewViewController",@"FMDBViewController",@"GCDTestViewController",@"AnimationTestViewController",@"SystemJumpViewController",@"FileDownloadViewController",@"YYKitTestViewController",@"BMPChangeViewController",@"RunloopViewController",@"KVOTestViewController",@"SignatureViewController"];
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(rightBarButtonItemClicked)];
     self.navigationItem.rightBarButtonItem = rightItem;

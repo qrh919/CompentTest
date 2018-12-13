@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26EBAEC221C24D0F006F81CC /* SignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EBAEC121C24D0F006F81CC /* SignatureViewController.m */; };
+		26EBAEC521C24D98006F81CC /* NormalSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EBAEC421C24D98006F81CC /* NormalSignatureView.m */; };
+		26EBAEC821C24DA8006F81CC /* PPSSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EBAEC621C24DA8006F81CC /* PPSSignatureView.m */; };
 		2E02E984204E90B600EAEC0D /* CycleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02E983204E90B600EAEC0D /* CycleLabel.m */; };
 		2E02E989204EA17900EAEC0D /* QDisGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02E988204EA17900EAEC0D /* QDisGroup.m */; };
 		2E03EFCE205630FB00B7DD5C /* YYKitTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E03EFCD205630FB00B7DD5C /* YYKitTestViewController.m */; };
@@ -67,6 +70,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26EBAEC021C24D0F006F81CC /* SignatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignatureViewController.h; sourceTree = "<group>"; };
+		26EBAEC121C24D0F006F81CC /* SignatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignatureViewController.m; sourceTree = "<group>"; };
+		26EBAEC321C24D98006F81CC /* NormalSignatureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalSignatureView.h; sourceTree = "<group>"; };
+		26EBAEC421C24D98006F81CC /* NormalSignatureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalSignatureView.m; sourceTree = "<group>"; };
+		26EBAEC621C24DA8006F81CC /* PPSSignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSSignatureView.m; sourceTree = "<group>"; };
+		26EBAEC721C24DA8006F81CC /* PPSSignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSSignatureView.h; sourceTree = "<group>"; };
 		2E02E982204E90B600EAEC0D /* CycleLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleLabel.h; sourceTree = "<group>"; };
 		2E02E983204E90B600EAEC0D /* CycleLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleLabel.m; sourceTree = "<group>"; };
 		2E02E986204EA11900EAEC0D /* QGCD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QGCD.h; sourceTree = "<group>"; };
@@ -213,6 +222,19 @@
 				A4AAD66F222F746420A7E2B3 /* Pods-CompentTest.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		26EBAEBF21C24C62006F81CC /* 绘画签名 */ = {
+			isa = PBXGroup;
+			children = (
+				26EBAEC021C24D0F006F81CC /* SignatureViewController.h */,
+				26EBAEC121C24D0F006F81CC /* SignatureViewController.m */,
+				26EBAEC321C24D98006F81CC /* NormalSignatureView.h */,
+				26EBAEC421C24D98006F81CC /* NormalSignatureView.m */,
+				26EBAEC721C24DA8006F81CC /* PPSSignatureView.h */,
+				26EBAEC621C24DA8006F81CC /* PPSSignatureView.m */,
+			);
+			path = "绘画签名";
 			sourceTree = "<group>";
 		};
 		2E02E985204EA00600EAEC0D /* GCD */ = {
@@ -415,6 +437,7 @@
 		2E720CFF1F99F18B00BA6276 /* CompentTest */ = {
 			isa = PBXGroup;
 			children = (
+				26EBAEBF21C24C62006F81CC /* 绘画签名 */,
 				2E42D2E3212D5F5C008B9C0B /* KVO&KVC */,
 				2EC2434B2120402F009C201B /* 图片转换 */,
 				2E80D93720BEE53E00FA0238 /* runtime */,
@@ -653,6 +676,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26EBAEC521C24D98006F81CC /* NormalSignatureView.m in Sources */,
 				2E720D051F99F18B00BA6276 /* ViewController.m in Sources */,
 				2E3775AC2052310F00160BEE /* QFileDLMananger.m in Sources */,
 				2E42D2EF212E9968008B9C0B /* NSObject+QKVC.m in Sources */,
@@ -693,6 +717,7 @@
 				2E80D93A20BEE95500FA0238 /* NSObject+Leaks.m in Sources */,
 				2E03EFD92056324C00B7DD5C /* BaseTableViewController.m in Sources */,
 				2E06213720A48250002CC0DF /* Animal.m in Sources */,
+				26EBAEC821C24DA8006F81CC /* PPSSignatureView.m in Sources */,
 				2EFF7D502043E45D008C18B9 /* ChangeCellHeightController.m in Sources */,
 				2E720D191F99F9E400BA6276 /* SBResultViewController.m in Sources */,
 				2EA3B3292127C96A00F3E863 /* RACRootViewController.m in Sources */,
@@ -700,6 +725,7 @@
 				2E720D1C1F99FC1700BA6276 /* SBViewController.m in Sources */,
 				2E44C6341FFE007B005F9037 /* TestViewController.m in Sources */,
 				2E720D021F99F18B00BA6276 /* AppDelegate.m in Sources */,
+				26EBAEC221C24D0F006F81CC /* SignatureViewController.m in Sources */,
 				2E3848A020492A4200B4063F /* TestCoreFoundation.m in Sources */,
 				2E45FB652050DA2400C9C7FC /* AnimationTestViewController.m in Sources */,
 				2E3B01F6201EC86700EE1EA8 /* QWaterView.m in Sources */,
